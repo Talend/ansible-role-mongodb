@@ -1,10 +1,10 @@
 ---
-- name: Set Zone reclaim mode for NUMA
-  sysctl:
-    name: vm.zone_reclaim_mode
-    value: "{{ sysctl_zone_reclaim_mode }}"
-    reload: yes
-    state: present
+# - name: Set Zone reclaim mode for NUMA
+#   sysctl:
+#     name: vm.zone_reclaim_mode
+#     value: "{{ sysctl_zone_reclaim_mode }}"
+#     reload: yes
+#     state: present
 
 - name: Set TCP idle timeout
   sysctl:
